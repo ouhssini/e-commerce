@@ -22,7 +22,7 @@ const App = () => {
   }, []);
 
   return (
-    <div onclick={()=>setIsShow(false)}>
+    <div>
       <ToastContainer />
       {isshow && <Cart products={cart} />}
       <Header setFiltred={setFiltred} cart={cart} all={all} isshow={isshow} setIsShow={setIsShow} />
