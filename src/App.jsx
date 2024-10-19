@@ -25,11 +25,17 @@ const App = () => {
     <div>
       <ToastContainer />
       {isshow && <Cart products={cart} />}
-      <Header setFiltred={setFiltred} cart={cart} all={all} isshow={isshow} setIsShow={setIsShow} />
+      <Header
+        setFiltred={setFiltred}
+        cart={cart}
+        all={all}
+        isshow={isshow}
+        setIsShow={setIsShow}
+      />
       <main className="flex justify-center gap-2 px-10 pt-4 flex-wrap">
         <SideBar all={all} setFiltred={setFiltred} />
-        <section className="flex-1 border border-slate-400 mb-6 basis-80">
-          <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4 p-4 items-stretch justify-center">
+        <div className="flex-1 md:ml-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {filtered.map((product) => (
               <Card
                 key={product.id}
@@ -39,7 +45,7 @@ const App = () => {
               />
             ))}
           </div>
-        </section>
+        </div>
       </main>
     </div>
   );
