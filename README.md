@@ -14,7 +14,7 @@ This is an e-commerce application built with React, Tailwind CSS, and Vite. The 
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/ouhssin/e-commerce.git
+    git clone https://github.com/ouhssini/e-commerce.git
     ```
 
 2. Navigate to the project directory:
@@ -56,4 +56,4 @@ This project is licensed under the MIT License.
 
 ## Author
 
-- GitHub: [ouhssin](https://github.com/ouhssin)
+- GitHub: [ouhssini](https://github.com/ouhssini)
