@@ -9,7 +9,7 @@ const Cart = ({ products }) => {
 
   return (
     <>
-      <div className="absolute  w-1/3 right-10 top-12 rounded-lg shadow-2xl bg-gray-50 transition-all ease-in-out duration-200 z-50 px-10 py-5 gap-5 flex flex-col items-start justify-start">
+      <div className="absolute  w-[90%] lg:w-1/3 lg:right-10 right-5 top-12 rounded-lg shadow-2xl bg-gray-50 transition-all ease-in-out duration-200 z-50 px-10 py-5 gap-5 flex flex-col items-start justify-start">
         <h1 className="text-3xl  text-center font-bold">Cart ({total.toFixed(2)} $)</h1>
         <div className="flex flex-col items-start gap-5 justify-center">
           {products.map((product) => (
